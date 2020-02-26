@@ -8,8 +8,7 @@ Rails.application.routes.draw do
     resources :ingredients, only: [:index]
   end
 
-  resources :bakers, only: [:index] do
+  resources :bakers, only: [:index, :show] do
     resources :recipes, only: [:index]
   end
-
 end

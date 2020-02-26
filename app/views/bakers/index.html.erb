@@ -1,0 +1,7 @@
+<h1>All Bakers</h1>
+
+<% @bakers.each do |baker| %>
+  <section id="baker-<%= baker.id %>">
+    <%= link_to baker.name, "/bakers/#{baker.id}" %>
+  </section>
+<% end %>
